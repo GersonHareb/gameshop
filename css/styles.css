@@ -240,13 +240,21 @@ section h2 {
   width: 100%;
 }
 
-.sillas{
-  
+.copy {
+  background-color: rgba(196, 196, 196, 1);
+  color: rgba(0, 0, 0, 1);
+  height: 25px;
+  text-align: center;
+}
+
+.copy p {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 28px;
 }
 
 .productos-container div img {
   width: 100%;
-
 }
 
 .productos-container div p {
@@ -271,13 +279,13 @@ section h2 {
   margin: auto;
 }
 
-.redes{
+.redes {
   width: 168px;
   text-align: center;
 }
 
 .redes p {
-  font-size:25px ;
+  font-size: 25px;
   color: rgba(243, 243, 243, 1);
 }
 
@@ -340,7 +348,7 @@ section h2 {
     height: 216px;
   }
 
-  .redes{
+  .redes {
     margin-left: auto;
   }
 }
