@@ -1,0 +1,346 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+  background-color: rgba(34, 34, 34, 0.068);
+}
+
+section {
+  width: 100%;
+}
+
+footer {
+  background-color: rgba(34, 34, 34, 1);
+}
+
+button {
+  width: 220px;
+  height: 61px;
+  border-radius: 5px;
+  background-color: rgba(208, 20, 24, 1);
+  color: rgba(243, 243, 243, 1);
+  font-size: 25px;
+  margin-top: 30px;
+}
+
+button:hover {
+  background-color: rgba(139, 72, 191, 0.7);
+  transform: translateY(-3px);
+}
+
+/*Menu*/
+nav {
+  width: 100%;
+  height: 90px;
+  background-color: rgba(34, 34, 34, 1);
+}
+
+.contenedor-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1024px;
+  height: 100%;
+  margin: auto;
+  padding: 0 20px;
+}
+
+nav img {
+  width: 200px;
+  height: 40px;
+  margin-left: 20px;
+}
+
+.carrito {
+  color: rgba(208, 20, 24, 1);
+}
+
+.hamburguesa {
+  cursor: pointer;
+  position: relative;
+  width: 30px;
+  height: 4px;
+}
+
+.nav-menu {
+  display: none;
+  overflow: hidden;
+}
+
+.nav-menu ul,
+.redes ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-item {
+  margin-right: 20px;
+}
+
+.nav-item:last-child {
+  margin-right: 0;
+}
+
+.nav-item a {
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(243, 243, 243, 1);
+}
+
+.nav-item a:hover {
+  color: rgba(36, 46, 82, 0.6);
+}
+
+.nav-link a i {
+  padding-left: 30px;
+  line-height: 20px;
+}
+
+/*Hamburguesa*/
+.hamburguesa {
+  margin-right: 30px;
+}
+
+.linea,
+.hamburguesa::before,
+.hamburguesa::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  position: absolute;
+  left: 0;
+}
+
+.hamburguesa::before {
+  top: -10px;
+}
+
+.hamburguesa::after {
+  bottom: -10px;
+}
+
+header {
+  width: 100%;
+  height: 512px;
+  background: url("../img/header.png") no-repeat;
+  background-size: cover;
+}
+
+.header-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 39px;
+}
+
+h1 {
+  text-align: center;
+  color: rgba(243, 243, 243, 1);
+  line-height: 46.88px;
+}
+
+header span {
+  color: rgba(208, 20, 24, 1);
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 855px;
+  margin: auto;
+  text-align: center;
+}
+
+section.card-container {
+  width: 100%;
+}
+
+section h2 {
+  padding: 40px 0 20px 0;
+  text-align: center;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-bottom: 50px;
+}
+
+.card {
+  width: 240px;
+  height: 322px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.card img {
+  margin: 28px 0;
+  width: 129px;
+  height: 163px;
+}
+
+.card-body {
+  padding: 20px;
+  border-top: solid 1px #c9c9c9;
+  text-align: left;
+}
+
+.card-body .precio {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23.44px;
+  padding: 1px 0;
+}
+
+.card-body .cuotas {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15.23px;
+  padding: 3px 0;
+}
+
+.card-body .envio {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 11.72px;
+  color: rgba(97, 157, 0, 1);
+}
+
+.productos-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  padding: 0 20px 50px 20px;
+  margin: auto;
+  max-width: 834px;
+}
+
+.productos-container div {
+  position: relative;
+  width: 100%;
+}
+
+.sillas{
+  
+}
+
+.productos-container div img {
+  width: 100%;
+
+}
+
+.productos-container div p {
+  padding-left: 10px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 17.58px;
+  position: absolute;
+  top: 40%;
+  right: 4%;
+  color: rgba(243, 243, 243, 1);
+}
+
+.footer-container {
+  max-width: 1024px;
+  height: 191px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0 50px;
+  margin: auto;
+}
+
+.redes{
+  width: 168px;
+  text-align: center;
+}
+
+.redes p {
+  font-size:25px ;
+  color: rgba(243, 243, 243, 1);
+}
+
+.redes ul {
+  padding-top: 20px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.red a i {
+  font-size: 25px;
+}
+
+.twitter {
+  color: rgba(20, 174, 208, 1);
+}
+
+.facebook {
+  color: rgba(20, 118, 208, 1);
+}
+
+.instagram {
+  color: rgba(206, 12, 255, 1);
+}
+
+@media (min-width: 411px) {
+  .card {
+    width: 265px;
+    height: 322px;
+  }
+
+  .hamburguesa {
+    display: none;
+  }
+
+  .nav-menu {
+    display: block;
+  }
+
+  .productos-container div {
+    margin: auto;
+    max-width: 360px;
+  }
+
+  .productos-container div p {
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 29.3px;
+  }
+}
+
+/*Media query DESKTOP*/
+@media (min-width: 768px) {
+  nav button {
+    display: block;
+  }
+
+  .footer-container {
+    height: 216px;
+  }
+
+  .redes{
+    margin-left: auto;
+  }
+}
